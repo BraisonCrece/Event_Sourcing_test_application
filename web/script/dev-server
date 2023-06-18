@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+echo "Removing dist directory"
+rm -rf dist
+echo "Removing .parcel-cache directory..."
+rm -rf .parcel-cache
+
+yarn run parcel serve ./public/index.html
